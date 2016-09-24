@@ -11,8 +11,9 @@
     <style type="text/css">
     .fixed:after {content: '.';display: block;height: 0;clear: both;font-size: 0;}
     .fixed{*zoom: 1;}
-    .nav-outer{width: 90%;margin: 0 auto;border: 1px solid #159957;background: #159957;}
-    .nav-outer li{float: left;width: 33.3%;cursor: pointer;text-align: center;background: #159957;border-right: 1px solid #fff;color:#fff;}
+    .nav-outer{width: 90%;margin: 0 auto;border: 1px solid #159957;background: #159957;list-style-type: none;margin: 0;padding: 0;}
+    .nav-outer li{float: left;width: 31.3%;padding: 2% 1%;cursor: pointer;text-align: center;background: #159957;border-right: 1px solid #fff;color:#fff;}
+    .nav-outer .cur{background: #fff;color: #159957;}
     </style>
   </head>
   <body>
@@ -26,7 +27,7 @@
 
     <section class="main-content">
       <ul class="nav-outer fixed">
-        <li>Bangkok(Day1-Day3)</li>
+        <li class="cur">Bangkok(Day1-Day3)</li>
         <li>krabi(Day4-Day7)</li>
         <li style="border:none;">Bangkok(Day7-Day9)</li>
       </ul>
@@ -38,7 +39,12 @@
       </footer>
 
     </section>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert(111);
+      })
+    </script>
   
   </body>
 </html>
