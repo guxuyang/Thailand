@@ -31,6 +31,7 @@
     </style>
   </head>
   <body>
+    <img src="http://img.lailaihui.com/2014/11/24/201411241431393688.jpg" style="display:none;">
     <section class="page-header">
       <h1 class="project-name">Thailand</h1>
       <h2 class="project-tagline">Itinerary for Thailand</h2>
@@ -294,7 +295,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.nav-outer li').bind('click',function(){
+        $('.nav-outer li').bind('click touchend',function(){
           var index = $('.nav-outer li').index(this);
           $('.nav-outer li').removeClass('cur').eq(index).addClass('cur');
           $('.content-box').fadeOut().eq(index).fadeIn();
