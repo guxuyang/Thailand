@@ -298,7 +298,7 @@
         $('.nav-outer li').bind('click touchend',function(){
           var index = $('.nav-outer li').index(this);
           $('.nav-outer li').removeClass('cur').eq(index).addClass('cur');
-          $('.content-box').fadeOut().eq(index).fadeIn();
+          $('.content-box').fadeOut().eq(index).delay(500).fadeIn();
         }) 
       })
     </script>
